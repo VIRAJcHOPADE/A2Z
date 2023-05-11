@@ -42,7 +42,7 @@ int main()
          if(ob.isPowerofTwo(n))//Now, if log2 produces an integer not decimal then we are sure raising 2 to this value
              cout<<"YES"<<endl;
          else
-            cout<<"NO"<<endl;
+            cout<<"NO0"<<endl;
 
     }
 
