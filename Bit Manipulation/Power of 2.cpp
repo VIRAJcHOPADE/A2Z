@@ -1,32 +1,9 @@
-//{ Driver Code Starts
-//Initial Template for C++
 
 #include<bits/stdc++.h>
 using namespace std;
 
 
-// } Driver Code Ends
-//User function Template for C++
 
-class Solution{
-    public:
-    // Function to check if given number n is a power of two.
-    bool isPowerofTwo(long long n){
-        
-        // Your code here 
-        float a=log2(n);
-        if(n==0)
-        return 0;
-        if(ceil(a)-floor(a)==0)
-        return 1;
-        else return 0;
-        
-    }
-};
-
-//{ Driver Code Starts.
-
-// Driver code
 int main()
 {
 
@@ -35,18 +12,37 @@ int main()
 
     for(int i=0;i<t;i++)
     {
-        long long n; //input a number n
+        int n;
         cin>>n;
-
-        Solution ob;
-         if(ob.isPowerofTwo(n))//Now, if log2 produces an integer not decimal then we are sure raising 2 to this value
-             cout<<"YES"<<endl;
-         else
-            cout<<"NO0"<<endl;
+        string s;
+        cin >> s;
+        int t=0;
+        int a=0;
+        for(int i=0;i<n;i++ ){
+            if(s[i]=="T"){
+                t++;
+            }
+            else{
+                a++;
+            }
+        }
+         if(t>a){
+            cout<<"T"<<endl;
+         }
+         else if(a>t){
+            cout<<"A"<<endl;
+         }
+         else{
+            if(s[n-1]=="T"){
+                cout<<"A"<<endl;
+            }
+            else{
+                cout<<"T"<<endl;
+            }
+         }
 
     }
 
     return 0;
 }
 
-// } Driver Code Ends
