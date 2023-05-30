@@ -66,6 +66,7 @@ int main()
         vector<long long int>ans=ob.twoOddNum(Arr,N);
         for(long long int i=0;i<ans.size();i++)cout<<ans[i]<<" ";
         cout<<endl;
+        cout<<;
     }
     return 0;
 }
