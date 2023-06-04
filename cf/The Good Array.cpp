@@ -19,7 +19,7 @@ int main() {
           ans = min(ans,l+r);
         }
         
-        
+        cout<< ans+1<<endl;
        
     }
 
