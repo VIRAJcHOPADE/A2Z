@@ -8,10 +8,7 @@ public:
     while (left < n && s[left] == 'a') {
         left++;
     }
-    // if(s.length()==1 && s[0]=='a'){
-    //     s[0]='z';
-    //     return s;
-    // }
+    
   
     if (left == n) {
         s[n - 1] = 'z';
