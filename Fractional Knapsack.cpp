@@ -57,12 +57,12 @@ int main()
 		cin>>n>>W;
 		
 		Item arr[n];
-		//value and weight of each item
+		
 		for(int i=0;i<n;i++){
 			cin>>arr[i].value>>arr[i].weight;
 		}
 		
-		//function call
+		
 		Solution ob;
 		cout<<ob.fractionalKnapsack(W, arr, n)<<endl;
 	}
